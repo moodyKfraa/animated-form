@@ -1,0 +1,50 @@
+body{
+    background-color: #eee;
+}
+h1{
+    margin: 0 auto;
+    color: #333;
+}
+form{
+    margin: 10px auto;
+    width: fit-content;
+}
+form .card{
+    flex-direction: column;
+    padding: 50px;
+    gap: 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #999;
+    display: none;
+}
+form .card.active{
+    display: flex;
+    animation: active 1s both;
+}
+@keyframes active {
+    0%{
+    opacity: .5;
+    transform: translateX(20px);
+    }
+    to{
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+form .card div input{
+    width: 200px;
+    padding: 10px;
+    color: #333;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: #eee;
+}
+form .card button{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    color: #333;
+    border-radius: 10px;
+    border-color: #eee;
+}
